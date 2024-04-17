@@ -50,6 +50,9 @@
   font-family: 'archivo';
   font-stretch: semi-condensed;
   font-weight: 800;
-  font-size: 16px;
-  
+  font-size: 16px;  
+}
+
+.group-button a:hover{
+  background: #8bd1ec
 }
