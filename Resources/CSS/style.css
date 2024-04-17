@@ -47,6 +47,9 @@
   text-decoration: none;
   color: #1E6480;
   border-radius: 5px;
-  font-family: 'segoe ui';
+  font-family: 'archivo';
+  font-stretch: 'semi condensed'
+  font-weight: 500;
+  font-size: 14px;
   
 }
