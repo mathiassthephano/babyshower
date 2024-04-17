@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.bg-flyer-gender-reveal{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-flyer-gender-reveal img{
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
+}
+
+@media (max-width: 640px) {
+  .bg-flyer-gender-reveal img{
+    height: auto;
+  }
+}
+
+
+#countdown {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  font-family: archivo;
+
+  padding: 15px 0px;
+  background: #f1faff;
+  color: #344678;
+}
+
+.group-button{
+  display: flex;
+  justify-content: center;
+}
+
+.group-button a{
+  background: #AFD3E1;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #1E6480;
+  border-radius: 5px;
+  font-family: 'segoe ui';
+  
+}

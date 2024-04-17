@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Resources/CSS/style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+</head>
+<body>
+<div class="bg-flyer-gender-reveal">
+  <div class="flyer-gender-reveal">
+    <div id="countdown"></div>
+    <img src="https://i.ibb.co/HYrR4nj/Flyer-baby-shower.jpg" alt="">
+    <div class="group-button">
+      <a href="https://maps.app.goo.gl/j7b2E914gwd6WMjLA?g_st=iw">Ubicación</a>
+      <a href="https://api.whatsapp.com/send?phone=+51930501147&text=Hola%20%E2%9C%A8,%20muchas%20gracias%20por%20la%20invitaci%C3%B3n.%20Confirmo%20mi%20asistencia%20al%20baby%20shower%20%F0%9F%A4%B0%F0%9F%8F%BD%F0%9F%92%95.%20Nos%20vemos%20pronto%20%E2%9C%A8">Confirmar Asistencia</a>
+    </div>
+  </div>
+</div>
+
+    <script>
+        // Establecer la fecha objetivo
+const targetDate = new Date("July 06, 2024 18:00:00").getTime();
+
+// Actualizar el temporizador cada segundo
+const interval = setInterval(function() {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  // Calcular el tiempo restante
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Mostrar el tiempo restante en el elemento con id "countdown"
+  document.getElementById("countdown").innerHTML = `
+    <p>Faltan ${days} días, ${hours} horas, ${minutes} minutos, y ${seconds} segundos</p>
+  `;
+
+  // Si la cuenta regresiva termina, mostrar un mensaje
+  if (distance < 0) {
+    clearInterval(interval);
+    document.getElementById("countdown").innerHTML = "¡Ya es hora!";
+  }
+}, 1000);
+
+
+    </script>
+</body>
+</html>
